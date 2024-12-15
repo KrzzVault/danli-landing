@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bienvenido a Danlí, Honduras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Enlaces a fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/Escudo_de_Danli.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Script para hacer que el encabezado se reduzca al hacer scroll -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.querySelector('header').classList.add("shrink");
+            } else {
+                document.querySelector('header').classList.remove("shrink");
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#lugares-turisticos">Turismo</a></li>
+            <li><a href="#cultura">Cultura</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header id="inicio">
+        <div class="content">
+            <h1>Bienvenidos a Danlí</h1>
+            <p>Descubre la belleza de la Ciudad de las Colinas</p>
+        </div>
+        <!-- Botón de flecha para scroll hacia abajo -->
+        <div class="scroll-down">
+            <a href="#historia">
+                <span>&#8595;</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección Historia -->
+        <section id="historia">
+            <h2><b>Historia de Danlí</b></h2>
+            <p>Danlí fue fundada por el Padre Franciscano Fernando Espino en 1667 con el nombre de San Buenaventura. En este sitio, construyó una iglesia para catequizar a los indígenas de la región. Poco tiempo después, bautizó la comunidad con el nombre de Danlí.</p>
+            <p>Según otras fuentes, Danlí fue fundada entre los años 1676 y 1678, por los hermanos Pedro y Alonso Ortiz de Fúnez, quienes heredaron una estancia poblada en tierras "sueltas" (sin dueño), llamada Danlí. Los hermanos tuvieron el deseo de legalizar las tierras con la Corona Española, a seis tostones por caballería. La venta del sitio se legalizó en 1679, y en 1690 ya se menciona la existencia de torres de vigilancia y de una población en crecimiento.</p>
+            <p>En 1791, Danlí aparece como cabecera del Curato, y en 1794, el territorio de Danlí fue delimitado. Durante la división territorial de 1825, Danlí pasó a ser una parroquia del Partido de Olancho.</p>
+            <p>El 12 de abril de 1843, Danlí recibió el título de ciudad, un honroso reconocimiento que compartió con otras ciudades importantes de Honduras. En 1869, al crearse el departamento de El Paraíso, Danlí pasó a formar parte de este. En el censo de 1887, la población de Danlí era de 6,743 habitantes.</p>
+            <p>Danlí fue visitada por el famoso explorador francés Alphonse Pinart en 1896, quien hizo importantes descubrimientos paleontológicos en la región. En 1950, la población de Danlí había crecido a 16,449 habitantes.</p>
+            <p>En 1983, durante la gestión de Santiago Montoya Vega, se celebró el 150 aniversario del título de ciudad, y en 2002, la Casa de la Cultura conmemoró el 159 aniversario. Hoy en día, Danlí se distingue como un importante centro productor de maíz, siendo conocida como la "Ciudad de las Colinas" debido a su ubicación entre cerros de verde pinar.</p>
+        </section>
+
+        <!-- Turismo -->
+        <section id="lugares-turisticos">
+            <h2><b>Lugares Turísticos de Danlí</b></h2>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/Parroquia.jpg" class="d-block w-100" alt="Lugar Turístico 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Parroquia Inmaculada Concepción</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/danli-Finca-santa-emilia.jpg" class="d-block w-100" alt="Lugar Turístico 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Finca Santa Emilia</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cerro de la cruz.jpeg" class="d-block w-100" alt="Lugar Turístico 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p>Cerro de la Cruz</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles del carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cultura -->
+        <section id="cultura">
+            <h2><b>Cultura y Tradiciones</b></h2>
+            <p>Danlí es famoso por su festival del maíz y las actividades culturales que unen a la comunidad. El <strong>Festival Internacional del Maíz</strong>, que se celebra en la Ciudad de las Colinas desde 1977, es el evento más emblemático de la ciudad y refleja el valor agrícola de la región.</p>
+
+            <img class="festival-image" src="img/festival-del-maiz-en-danli-zona-de-las-colinas.jpg" alt="Festival del Maíz en Danlí, Zona de las Colinas">
+
+            <h3>Festival del Maíz, una tradición en la Ciudad de las Colinas</h3>
+            <p>Este festival nació en un contexto histórico en el que Danlí era conocida como el "Granero de Centroamérica", un reconocimiento a su riqueza agrícola, especialmente en la producción de maíz. El Festival fue creado para honrar esa tradición y fomentar el trabajo de los agricultores y campesinos locales.</p>
+
+            <p>Durante este evento, los asistentes tienen la oportunidad de disfrutar una deliciosa variedad de platos típicos elaborados a base de maíz, como <strong>tamalitos de elote</strong>, <strong>montucas</strong>, <strong>güirilas</strong>, <strong>atol</strong>, <strong>fritas</strong>, <strong>nacatamales</strong>, <strong>elotes cocidos</strong> y las inigualables <strong>rosquillas de maíz</strong>. Este festín culinario es solo una parte de lo que convierte al Festival del Maíz en un evento único.</p>
+
+            <p>El festival no solo celebra la gastronomía, sino también la cultura local, con una serie de actividades familiares que incluyen:</p>
+            <ul>
+                <li><strong>Exposiciones de artesanías</strong></li>
+                <li><strong>Desfiles de carrozas</strong></li>
+                <li><strong>Concursos de arte</strong></li>
+                <li><strong>Rodeos</strong></li>
+                <li><strong>Competencias deportivas</strong></li>
+                <li><strong>Carnavales</strong></li>
+                <li><strong>Fiestas típicas</strong></li>
+            </ul>
+
+            <img class="festival-image" src="img/festival-del-maiz-en-danli-1.jpg" alt="Festival del Maíz en Danlí, Zona de las Colinas">
+
+            <p>Cada año, el festival atrae a miles de visitantes, quienes se sienten cautivados por la hospitalidad y la riqueza cultural de la región. En sus tierras fértiles, las milpas de maíz producen los granos que se convierten en el corazón de este gran evento, simbolizando el vínculo profundo entre Danlí y su tierra.</p>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Danlí, Honduras. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="https://github.com/KrzzLpzz">Cristian López.</a></p>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
